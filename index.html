@@ -1,54 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Julia Cotter</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-  
-    <body>
-      <nav>
-      <ul class="nav_bar">
-        <li class="nav_button"><a href="#home" class="nav_text">Home</a></li>
-        <li class="nav_button"><a href="#about" class="nav_text">About</a></li>
-        <li class="nav_button"><a href="#project" class="nav_text">Projects</a></li>
-        <li class="nav_button"><a href="#contact" class="nav_text">Contact</a></li>
-      </ul>
-      </nav>
-        
-      <div id="home">
-        <h1>Julia Cotter</h1>
-        <h3>Comupter engineering student</h3>
+
+<head>
+  <title>Julia Cotter</title>
+  <link rel="stylesheet" href="styles.css">
+  <script scr="functions.js"></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="nav_bar">
+      <li class="nav_button"><a href="#home" class="nav_text">Home</a></li>
+      <li class="nav_button"><a href="#about" class="nav_text">About</a></li>
+      <li class="nav_button"><a href="#experience" class="nav_text">Experience</a></li>
+      <li class="nav_button"><a href="#project" class="nav_text">Projects</a></li>
+      <li class="nav_button"><a href="#contact" class="nav_text">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="home">
+    <h1 class="name">Julia Cotter</h1>
+    <h3>Comupter engineering student</h3>
+  </div>
+
+  <div id="about">
+    <h3 class="title">About Me</h3>
+    <img class="me" src="/image/me.png" alt="Picture of Julia Cotter">
+    <p class="bio">My name is Julia Cotter. I'm currently in my 3rd year at Wentworth Institute of Technology, studying Computer Engineering with a minor in Applied Mathematics. I desire to manage data as a career. Working with databases has always been fun for me; it requires a combination of research skills and an eye for detail.</p>
+  </div>
+
+  <div id="experience">
+    <h3 class="title">Work Experience</h3>
+    <div class="work-grid">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'stateStreet')">Quantitative Research Co-op</button>
+        <button class="tablinks" onclick="openTab(event, 'wentworth')">Assistant Laboratory Technician</button>
+        <button class="tablinks" onclick="openTab(event, 'health')">Water Quality Analyist</button>
+        <button class="tablinks" onclick="openTab(event, 'ccc')">Traffic Counting Technician</button>
       </div>
 
-      <div id="about">
-        <div class="grid-container">
-          <div class="grid-title">
-            <h3>Education</h3>
-          </div>
-          <div class="grid-item">
-            <h4>Sturgis Charter Public School</h4>
-            <i>High School Diploma</i>
-            <h4>Wentworth Institute of Technology</h4>
-            <i>Bachelor of Science in Computer Engineering</i>
-            <i>Minor in Applied Mathematics</i>
-          </div>
-          <div class="grid-title">
-            <h3>Work Experience</h3>
-          </div>
-          <div class="grid-item">
-            <h4>Quantitative Research Co-op</h4>
-            <p><i>State Street Associates</i> Cambridge, MA</p>
-            <h4>Assistant Laboratory Technician</h4>
-            <p><i>Wentworth Institute of Technology</i> Boston, MA</p>
-            <h4>Water Quality Analyist</h4>
-            <p><i>Department of Health and Environment</i> Barnstable, MA</p>
-            <h4>Traffic Counting Technician</h4>
-            <p><i>Cape Cod Commission</i> Barnstable, MA</p>
-            <h4>Administrator Assistant</h4>
-            <p><i>Rosemarie Resnik & Associates, Inc</i> Osterville, MA</p>
-          </div>
-        </div>
+      <div id="stateStreet" class="tabcontent">
+        <h3>Quantitative Research Co-op @ <a href="http://www.statestreet.com/ideas/state-street-associates.html"> State Street</a></h3>
+        <i>January 2019 - Present</i>
       </div>
-                        
-    </body>
+
+      <div id="wentworth" class="tabcontent">
+        <h3>Assistant Laboratory Assistant @ Wentworth Institute of Technology</h3>
+        <i>January 2017 - Present</i>
+      </div>
+
+      <div id="health" class="tabcontent">
+        <h3>Water Quality Analyist @ <a href="https://www.barnstablecountyhealth.org/programs-and-services/bathing-beach-water-quality"> Department of Health and Environment</a></h3>
+        <i>May 2018 - August 2018</i>
+      </div>
+
+      <div id="ccc" class="tabcontent">
+        <h3>Traffic Counting Technician @ <a href="http://www.capecodcommission.org/departments/technicalservices/transportation">Cape Cod Commission</a></h3>
+        <i>May 2017 - August 2017</i>
+      </div>
+    </div>
+  </div>
+
+  <div id="project">
+    <h3 class="title">Projects</h3>
+    <div class="project-card">
+      <div class="project-picture">
+        <img src="/images/library-sim.png" alt="Library Simulation">
+      </div>
+      <div class="project-info">
+        <h4>Library Simulation</h4>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-picture">
+        <img src="/images/pixar-db.png" alt="Pixar Movie Database">
+      </div>
+      <div class="project-info">
+        <h4>Pixar Movie Database</h4>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-picture">
+        <img src="/images/rov.png" alt="ROV">
+      </div>
+      <div class="project-info">
+        <h4>Remote Operated Vehicle - Software</h4>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
+    <h3>Feel free to contact me!</h3>
+  </div>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/julia-cotter/"><img class="logo" src="/image/linkedin-logo.png" alt="linkedin logo"></a>
+    <a href="https://github.com/juliacotter"><img class="logo" src="/image/github-logo.png" alt="github logo"></a>
+  </footer>
+
+</body>
+
 </html>
