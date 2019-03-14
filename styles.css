@@ -29,3 +29,20 @@ html{
     text-align: center;
     padding: 212px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33.33% 66.67%;
+    padding: 10px;
+}
+
+.grid-title {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 85px 75px;
+}
+
+.grid-item {
+    padding: 10px;
+    line-height: 2px;
+}
