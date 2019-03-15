@@ -63,6 +63,8 @@ html {
   
   .me {
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
   }
   
   .bio {
@@ -131,6 +133,12 @@ html {
     width: 90%;
     height: 130px;
   }
+
+  .project-picture {
+    width: 100px;
+    height: 100px;
+    align-content: center;
+  }
   
   .project-info {
     padding: 2px 16px;
@@ -141,5 +149,10 @@ html {
   #contact {
     height: 768px;
     font-family: "Lato", sans-serif;
+  }
+
+  .logo {
+    width: 50px;
+    height:50px;
   }
   
