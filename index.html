@@ -2,8 +2,10 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Julia Cotter</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Lato" rel="stylesheet">
 </head>
 
 <body>
@@ -17,58 +19,112 @@
     </ul>
   </nav>
 
+  <div class="bg-image img1"></div>
+  
   <div id="home">
     <h1 class="name">Julia Cotter</h1>
-    <h3>Comupter engineering student</h3>
+    <h3 class="title">Computer engineering student</h3>
   </div>
+  
+  <div class="bg-image img2"></div>
 
   <div id="about">
-    <h3 class="title">About Me</h3>
-    <img class="me" src="/image/me.png" alt="Picture of Julia Cotter">
-    <p class="bio">My name is Julia Cotter. I'm currently in my 3rd year at Wentworth Institute of Technology, studying Computer Engineering with a minor in Applied Mathematics. I desire to manage data as a career. Working with databases has always been fun for me; it requires a combination of research skills and an eye for detail.</p>
+    <h3 class="title"><span>-&nbsp;&nbsp;</span>About Me<span>&nbsp;&nbsp;-</span></h3>
+    <img class="me" src="/images/me.png" alt="Picture of Julia Cotter">
+    <p class="bio">My name is Julia Cotter. I'm currently studying Computer Engineering with a minor in Applied Mathematics.</p>
   </div>
+  
+  <div class="bg-image img3"></div>
 
   <div id="experience">
-    <h3 class="title">Work Experience</h3>
+    <h3 class="title"><span>-&nbsp;&nbsp;</span>Work Experience<span>&nbsp;&nbsp;-</span></h3>
     <div class="work-grid">
       <div class="tab">
+        <script scr="functions.js"></script>
         <button class="tablinks" onclick="openTab(event, 'stateStreet')">Quantitative Research Co-op</button>
         <button class="tablinks" onclick="openTab(event, 'wentworth')">Assistant Laboratory Technician</button>
         <button class="tablinks" onclick="openTab(event, 'health')">Water Quality Analyist</button>
         <button class="tablinks" onclick="openTab(event, 'ccc')">Traffic Counting Technician</button>
+        <button class="tablinks" onclick="openTab(event, 'rose')">Administrator Assistant</button>
       </div>
 
       <div id="stateStreet" class="tabcontent">
         <h3>Quantitative Research Co-op @ <a href="http://www.statestreet.com/ideas/state-street-associates.html"> State Street</a></h3>
         <i>January 2019 - Present</i>
+        <ul>
+          <li>Support research effors by contributing with quantitative and qualitative analysis</li>
+          <li>Help to build marketing material and other client-facing reports</li>
+        </ul>
+        <p>Software:</p>
+        <ul>
+          <li>MATLAB</li>
+          <li>Toad for Oracle</li>
+        </ul>
       </div>
 
       <div id="wentworth" class="tabcontent">
-        <h3>Assistant Laboratory Assistant @ Wentworth Institute of Technology</h3>
+        <h3>Assistant Laboratory Technician @ <a href="https://wit.edu/ece/labs">Wentworth Institute of Technology</a></h3>
         <i>January 2017 - Present</i>
+        <ul>
+          <li>Supervise classes, check equipment in.out and assist in set up of equipment for faculty</li>
+          <li>Assist in repair of broken equipment, sort equipment, and mainatin laboratory</li>
+        </ul>
       </div>
 
       <div id="health" class="tabcontent">
         <h3>Water Quality Analyist @ <a href="https://www.barnstablecountyhealth.org/programs-and-services/bathing-beach-water-quality"> Department of Health and Environment</a></h3>
         <i>May 2018 - August 2018</i>
+        <ul>
+          <li>Collected and analyzed weekly beach water samples using multiple standard operating procedures</li>
+          <li>Maintained laboratory area and assisted in miscellaneous tasks</li>
+        </ul>
       </div>
 
       <div id="ccc" class="tabcontent">
         <h3>Traffic Counting Technician @ <a href="http://www.capecodcommission.org/departments/technicalservices/transportation">Cape Cod Commission</a></h3>
         <i>May 2017 - August 2017</i>
+        <ul>
+          <li>Set up road tubes and traffic counters, checked equipment operation, removed and relocated counters</li>
+          <li>Conducted turning movement counts at select Cape Cod intersections</li>
+        </ul>
+      </div>
+      
+      <div id="rose" class="tabcontent">
+        <h3>Administrator Assistant @ <a href="https://resnikassociates.com/
+"> Rosemarie Resnik & Associates, Inc.</a></h3>
+        <i>April 2017 - May 2017</i>
+        <ul>
+          <li>Data entry of prospective donors’ information and donation amounts</li>
+          <li>Generating and editing documents through GiftWorks</li>
+          <li>Prospect research using WealthEngine</li>
+        </ul>
       </div>
     </div>
-    <script type="text/javascript" scr="functions.js"></script>
+
   </div>
+  
+  <div class="bg-image img4"></div>
 
   <div id="project">
-    <h3 class="title">Projects</h3>
+    <h3 class="title"><span>-&nbsp;&nbsp;</span>Projects<span>&nbsp;&nbsp;-</span></h3>
+    <div class="project-card">
+      <div class="project-picture">
+        <img src="/images/rov.png" alt="ROV">
+      </div>
+      <div class="project-info">
+        <h4>Underwater Remote Operated Vehicle - Software</h4>
+        <p>Through Wentworth's chapter of IEEE, I contributed to the code for reading the sensor data of an underwater remote operated vehicle. The vehicle was for the MATE International ROV Competition.</p>
+        <a href="https://github.com/WIT-IEEE-Nugget-Industries-2019/sensor-reading">Code on Github</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="https://wit-ieee-nugget-industries-2019.github.io/">Documentation</a>
+      </div>
+    </div>
     <div class="project-card">
       <div class="project-picture">
         <img src="/images/library-sim.png" alt="Library Simulation">
       </div>
       <div class="project-info">
         <h4>Library Simulation</h4>
+        <p>In my Object-Oriented Programming course, my final project was a library simulation that digitalizes the library management system.</p>
+        <a href="https://github.com/cartertrafton/lib_sim">Code on Github</a>
       </div>
     </div>
     <div class="project-card">
@@ -77,26 +133,21 @@
       </div>
       <div class="project-info">
         <h4>Pixar Movie Database</h4>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-picture">
-        <img src="/images/rov.png" alt="ROV">
-      </div>
-      <div class="project-info">
-        <h4>Remote Operated Vehicle - Software</h4>
+        <p>In my Database Management Systems course, my final project was creating a database for the 20 Pixar movies. Information included staff, awards won, soundtrack, and more.</p>
+        <a href="https://github.com/juliacotter/Pixar-Database">Code on Github</a>
       </div>
     </div>
   </div>
 
+  <div class="bg-image img5"></div>
+  
   <div id="contact">
-    <h3>Feel free to contact me!</h3>
+    <h3 class="title"><span>-&nbsp;&nbsp;</span>Contact<span>&nbsp;&nbsp;-</span></h3>
+    <p>Feel free to message me on any of the following platforms:</p>
+    <a href="https://www.linkedin.com/in/julia-cotter/"><img class="logo" src="/images/linkedin.png" alt="linkedin logo"></a><br>
+    <a href="https://github.com/juliacotter"><img class="logo" src="/images/github.png" alt="github logo"></a><br>
+    <a href="mailto:julia.cotter98@gmail.com"><img src="/images/gmail.png" alt="email"></a>
   </div>
-
-  <footer>
-    <a href="https://www.linkedin.com/in/julia-cotter/"><img class="logo" src="/image/linkedin-logo.png" alt="linkedin logo"></a>
-    <a href="https://github.com/juliacotter"><img class="logo" src="/image/github-logo.png" alt="github logo"></a>
-  </footer>
 
 </body>
 
